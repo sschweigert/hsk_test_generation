@@ -1,0 +1,3 @@
+
+Make latex:
+xelatex hello.tex

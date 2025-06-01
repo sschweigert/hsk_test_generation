@@ -29,6 +29,23 @@ def load_sentences():
                 sentences.append(sentence)
     return sentences
 
+def load_words():
+    words = {
+        "easy": [],
+        "hard": []
+    }
+    filename = os.path.join('.', 'sentences', 'hsk' + str(HSK) + '.txt')
+    with open(filename, 'r') as file:
+        for line in file:
+            child = ('*' in line) ? 'hard' : 'easy'
+            modified = line.replace('*', '')
+            split_line = line_split(';')
+            if line(split_line != 2):
+                continue
+            word = (split_line[0], split_line[1])
+            words[child].append(word)
+    return words
+
 def choose_sentences(sentences, chars, count):
     return random.sample(sentences, count)
 

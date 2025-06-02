@@ -2,7 +2,6 @@
 \usepackage{fontspec}
 \setmainfont{Noto Sans CJK SC} % This defines chinese font - alternatives may be available
 \begin{document}
-\begin{minipage}{\textwidth}
 Chinese Test
 
 For the following sentences, write the English translation and pinyin.
@@ -13,7 +12,7 @@ For the following sentences, write the English translation and pinyin.
 
 For the following words, write the English translation and pinyin.
 {% for word in words_chinese %}
-{{word}}: \underline{\hspace{2em}}  
+{{word}}: \underline{\hspace{2em}} \\
 {% endfor %}
 
 For the following sentences, write the Chinese translation and pinyin.
@@ -24,8 +23,7 @@ For the following sentences, write the Chinese translation and pinyin.
 
 For the following words, write the Chinese translation and pinyin.
 {% for word in words_english %}
-{{word}}: \underline{\hspace{2em}}  
+{{word}}: \underline{\hspace{2em}} \\
 {% endfor %}
 
-\end{minipage}
 \end{document}

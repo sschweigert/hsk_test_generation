@@ -70,21 +70,21 @@ def main():
     num_sentences = 20
 
     # Easy only
-    easy_words = random.sample(list(words["easy"].items()), num_words)
+    words_english = random.sample(list(words["easy"].items()), num_words)
 
     remaining = copy.deepcopy(words['hard']) | copy.deepcopy(words['easy'])
-    for key, val in easy_words:
+    for key, val in words_english:
         del remaining[key]
 
-    hard_words = random.sample(list(words['hard'].items()), num_words)
+    words_chinese = random.sample(list(remaining.keys()), num_words)
     
     chosen_sentences = choose_sentences(sentences, chars, num_sentences)
     half_num = int(num_sentences / 2)
 
     test_def = {
-        'words_chinese':['中国','我们'],
+        'words_chinese':words_chinese,
         'sentences_chinese':[sentence[0] for sentence in chosen_sentences[0:half_num]],
-        'words_english':[],
+        'words_english':[val[1] for val in words_english],
         'sentences_english':[sentence[1] for sentence in chosen_sentences[half_num:]]
     }
     filename = 'output.tex'
@@ -93,7 +93,7 @@ def main():
 
 
 def generate_test_tex(test_def, filename):
-    env = Environment(loader=FileSystemLoader('templates/'))
+    env = Environment(loader=FileSystemLoader('templates/'), trim_blocks=True, lstrip_blocks=True)
     template = env.get_template('chinese_test.jinja')
     content = template.render(
         words_chinese=test_def['words_chinese'],

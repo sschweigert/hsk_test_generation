@@ -3,20 +3,27 @@
 import os
 import random
 import subprocess
+import copy
 
 from jinja2 import Environment, FileSystemLoader
 
 HSK = 1
 
-def load_chars():
+def load_dataset():
     chars = set()
+    words = {}
     filename = os.path.join('.', 'data', 'hsk' + str(HSK) + '.txt')
     with open(filename, 'r') as file:
         for line in file:
-            word = line.split('\t')[0]
+            # Note sometimes there are misc \ufeff.
+            # This is due to bad CSV encoding
+            split = line.replace('\ufeff', '').split('\t')
+            word = split[0].strip()
+            definition = split[4].strip()
             for char in word:
                 chars.add(char)
-    return chars
+                words[word] = definition
+    return (chars, words)
 
 def load_sentences():
     sentences = []
@@ -25,35 +32,52 @@ def load_sentences():
         for line in file:
             split_line = line.split(';')
             if len(split_line) == 2:
-                sentence = (split_line[0], split_line[1])
+                sentence = (split_line[0].strip(), split_line[1].strip())
                 sentences.append(sentence)
     return sentences
 
 def load_words():
     words = {
-        "easy": [],
-        "hard": []
+        "easy": {},
+        "hard": {}
     }
-    filename = os.path.join('.', 'sentences', 'hsk' + str(HSK) + '.txt')
+    filename = os.path.join('.', 'words', 'hsk' + str(HSK) + '.txt')
     with open(filename, 'r') as file:
         for line in file:
-            child = ('*' in line) ? 'hard' : 'easy'
-            modified = line.replace('*', '')
-            split_line = line_split(';')
-            if line(split_line != 2):
+            child = 'easy' if ('*' in line) else 'hard'
+            modified = line.replace('*', '').strip()
+            split_line = modified.split(';')
+            if len(split_line) != 2:
                 continue
-            word = (split_line[0], split_line[1])
-            words[child].append(word)
+            word_chinese = split_line[0].strip()
+            word_english = split_line[1].strip()
+            words[child][word_chinese] = word_english
     return words
 
 def choose_sentences(sentences, chars, count):
     return random.sample(sentences, count)
 
 def main():
-    chars = load_chars()
+    chars, data_words = load_dataset()
     sentences = load_sentences()
+    words = load_words()
 
-    num_sentences = 10
+    for word, definition in data_words.items():
+        if word not in words["easy"]:
+            words["easy"][word] = definition
+
+    num_words = 50
+    num_sentences = 20
+
+    # Easy only
+    easy_words = random.sample(list(words["easy"].items()), num_words)
+
+    remaining = copy.deepcopy(words['hard']) | copy.deepcopy(words['easy'])
+    for key, val in easy_words:
+        del remaining[key]
+
+    hard_words = random.sample(list(words['hard'].items()), num_words)
+    
     chosen_sentences = choose_sentences(sentences, chars, num_sentences)
     half_num = int(num_sentences / 2)
 

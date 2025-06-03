@@ -8,6 +8,7 @@ import copy
 from jinja2 import Environment, FileSystemLoader
 
 HSK = 1
+random.seed(0)
 
 def load_dataset():
     chars = set()
@@ -19,7 +20,7 @@ def load_dataset():
             # This is due to bad CSV encoding
             split = line.replace('\ufeff', '').split('\t')
             word = split[0].strip()
-            definition = split[4].strip()
+            definition = split[4].strip().replace(';', ',').capitalize()
             for char in word:
                 chars.add(char)
                 words[word] = definition

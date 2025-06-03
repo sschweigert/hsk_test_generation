@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{fontspec}
+\usepackage{multicol}
 \setmainfont{Noto Sans CJK SC} % This defines chinese font - alternatives may be available
 \title{Chinese Test}
 \date{}
@@ -17,9 +18,11 @@ For the following sentences, write the English translation and pinyin.\\
 {% endfor %}
 
 For the following words, write the English translation and pinyin.\\
+\begin{multicols}{2}
 {% for word in words_chinese %}
 {{word}}: \underline{\hspace{2em}} \\
 {% endfor %}
+\end{multicols}
 
 For the following sentences, write the Chinese translation and pinyin.\\
 {% for sentence in sentences_english %}
@@ -28,8 +31,10 @@ For the following sentences, write the Chinese translation and pinyin.\\
 {% endfor %}
 
 For the following words, write the Chinese translation and pinyin.\\
+\begin{multicols}{2}
 {% for word in words_english %}
 {{word}}: \underline{\hspace{2em}} \\
 {% endfor %}
+\end{multicols}
 
 \end{document}

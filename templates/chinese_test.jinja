@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[17pt]{extarticle}
 \usepackage{fontspec}
 \usepackage{multicol}
 \setmainfont{Noto Sans CJK SC} % This defines chinese font - alternatives may be available
@@ -9,28 +9,42 @@
 
 \begin{document}
 
-\maketitle
+{\noindent\large\textbf{Chinese Test}}\\
 
-For the following sentences, write the English translation and pinyin.\\
+1. For the following sentences, write the English translation and pinyin.\\
+\vspace{0.5em}\\
 {% for sentence in sentences_chinese %}
+\noindent
+\begin{minipage}{\textwidth}
 {{sentence}}\\
+\vspace{0.5em}\\
 \rule{\textwidth}{0.4pt}
+\vspace{0.5em}
+\end{minipage}
 {% endfor %}
 
-For the following words, write the English translation and pinyin.\\
+2. For the following words, write the English translation and pinyin.\\
+\vspace{0.5em}\\
 \begin{multicols}{2}
 {% for word in words_chinese %}
 {{word}}: \underline{\hspace{4em}} \\
 {% endfor %}
 \end{multicols}
 
-For the following sentences, write the Chinese translation and pinyin.\\
+3. For the following sentences, write the Chinese translation and pinyin.\\
+\vspace{0.5em}\\
 {% for sentence in sentences_english %}
+\noindent
+\begin{minipage}{\textwidth}
 {{sentence}}\\
+\vspace{0.5em}\\
 \rule{\textwidth}{0.4pt}
+\vspace{0.5em}
+\end{minipage}
 {% endfor %}
 
-For the following words, write the Chinese translation and pinyin.\\
+4. For the following words, write the Chinese translation and pinyin.\\
+\vspace{0.5em}\\
 \begin{multicols}{2}
 {% for word in words_english %}
 {{word}}: \underline{\hspace{4em}} \\

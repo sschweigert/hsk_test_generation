@@ -4,14 +4,11 @@
 \usepackage{xeCJK}
 \usepackage{array}
 \setmainfont{Noto Sans CJK SC} % This defines chinese font - alternatives may be available
-\title{Chinese Test}
-\date{}
-\author{}
 \setlength{\parindent}{0pt}
 
 \begin{document}
 
-{\noindent\large\textbf{Chinese Test}}\\
+{\noindent\large\textbf{ {{ title }} }}\\
 
 1. For the following sentences, write the English translation and pinyin.\\
 \vspace{0.5em}\\
@@ -25,6 +22,7 @@
 \end{minipage}
 {% endfor %}
 
+\pagebreak
 2. For the following words, write the English translation and pinyin.\\
 \begin{multicols}{2}
 {% for word in words_chinese %}
@@ -38,6 +36,7 @@
 {% endfor %}
 \end{multicols}
 
+\pagebreak
 3. For the following sentences, write the Chinese translation and pinyin.\\
 \vspace{0.5em}\\
 {% for sentence in sentences_english %}
@@ -50,6 +49,7 @@
 \end{minipage}
 {% endfor %}
 
+\pagebreak
 4. For the following words, write the Chinese translation and pinyin.\\
 \begin{multicols}{2}
 {% for word in words_english %}

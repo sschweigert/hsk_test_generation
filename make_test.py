@@ -86,7 +86,8 @@ def main():
         'words_chinese':words_chinese,
         'sentences_chinese':[sentence[0] for sentence in chosen_sentences[0:half_num]],
         'words_english':[val[1] for val in words_english],
-        'sentences_english':[sentence[1] for sentence in chosen_sentences[half_num:]]
+        'sentences_english':[sentence[1] for sentence in chosen_sentences[half_num:]],
+        'title':'HSK {} Test'.format(str(HSK))
     }
     filename = 'output.tex'
     generate_test_tex(test_def, filename)
@@ -100,7 +101,8 @@ def generate_test_tex(test_def, filename):
         words_chinese=test_def['words_chinese'],
         sentences_chinese=test_def['sentences_chinese'],
         words_english=test_def['words_english'],
-        sentences_english=test_def['sentences_english']
+        sentences_english=test_def['sentences_english'],
+        title=test_def['title']
     )
 
     with open(filename, mode='w') as message:

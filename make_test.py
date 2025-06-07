@@ -20,7 +20,7 @@ def load_dataset():
             # This is due to bad CSV encoding
             split = line.replace('\ufeff', '').split('\t')
             word = split[0].strip()
-            definition = split[4].strip().replace(';', ',').capitalize()
+            definition = split[4].strip().replace(';', ',').replace('\'','{\\textquotesingle}').capitalize()
             for char in word:
                 chars.add(char)
                 words[word] = definition
@@ -33,7 +33,7 @@ def load_sentences():
         for line in file:
             split_line = line.split(';')
             if len(split_line) == 2:
-                sentence = (split_line[0].strip(), split_line[1].strip())
+                sentence = (split_line[0].strip(), split_line[1].replace('\'','{\\textquotesingle}').strip())
                 sentences.append(sentence)
     return sentences
 
@@ -51,7 +51,7 @@ def load_words():
             if len(split_line) != 2:
                 continue
             word_chinese = split_line[0].strip()
-            word_english = split_line[1].strip()
+            word_english = split_line[1].replace('\'','{\\textquotesingle}').strip()
             words[child][word_chinese] = word_english
     return words
 

@@ -29,11 +29,13 @@
 \vspace{0.5em}\\
 \begin{multicols}{2}
 {% for word in words_chinese %}
+\begin{minipage}{\linewidth}
 \begin{tabular*}{\linewidth}{@{}p{0.45\linewidth}@{\hfill}p{0.45\linewidth}@{}}
 {{word}} & \hspace{1em}\underline{\hspace{4em}} \\
 \end{tabular*}
 \vspace{0.5em}
 \par
+\end{minipage}
 {% endfor %}
 \end{multicols}
 
@@ -53,11 +55,13 @@
 \vspace{0.5em}\\
 \begin{multicols}{2}
 {% for word in words_english %}
+\begin{minipage}{\linewidth}
 \begin{tabular*}{\linewidth}{@{}>{\raggedright\footnotesize\arraybackslash}p{0.45\linewidth}@{\hfill}p{0.45\linewidth}@{}}
 {\raggedright\footnotesize {{word}}} & \hspace{1em}\underline{\hspace{4em}} \\
 \end{tabular*}
 \vspace{1.0em}
 \par
+\end{minipage}
 {% endfor %}
 \end{multicols}
 

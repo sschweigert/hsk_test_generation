@@ -28,7 +28,9 @@
 \vspace{0.5em}\\
 \begin{multicols}{2}
 {% for word in words_chinese %}
-{{word}}: \underline{\hspace{4em}} \\
+\begin{tabular*}{\linewidth}{@{}p{0.45\linewidth}@{\hfill}p{0.45\linewidth}@{}}
+{{word}}: & \hspace{1em}\underline{\hspace{4em}} \\
+\end{tabular*}
 {% endfor %}
 \end{multicols}
 
@@ -48,7 +50,9 @@
 \vspace{0.5em}\\
 \begin{multicols}{2}
 {% for word in words_english %}
-{{word}}: \underline{\hspace{4em}} \\
+\begin{tabular*}{\linewidth}{@{}p{0.45\linewidth}@{\hfill}p{0.45\linewidth}@{}}
+{\raggedright\footnotesize {{word}}:} & \hspace{1em}\underline{\hspace{4em}} \\
+\end{tabular*}
 {% endfor %}
 \end{multicols}
 

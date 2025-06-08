@@ -6,8 +6,14 @@ import copy
 from loading import load_dataset, load_sentences, load_words
 from generate_pdf import generate_pdf
 
-HSK = 1
-random.seed(0)
+
+test_config = {
+    'HSK': 1,
+    'seed': 0,
+    'num_words': 50,
+    'num_sentences': 20
+}
+random.seed(test_config['seed'])
 
 non_chars = set([' ', '。', '，', '？', '！', '.', ',', '?', '!', '\"', '\'', '“', '”'])
 non_chars.update([str(val) for val in range(10)])
@@ -50,35 +56,33 @@ def choose_sentences(sentences, chars, count):
     return to_return
 
 def generate_test_def(chars, words, sentences):
-    num_words = 50
-    num_sentences = 20
 
     # Easy only for english->chinese
-    words_english = random.sample(list(words["easy"].items()), num_words)
+    words_english = random.sample(list(words["easy"].items()), test_config['num_words'])
 
     # Chinese->english contains all the remaining words (minus those in words_english)
     remaining = copy.deepcopy(words['hard']) | copy.deepcopy(words['easy'])
     for key, val in words_english:
         del remaining[key]
 
-    words_chinese = random.sample(list(remaining.keys()), num_words)
+    words_chinese = random.sample(list(remaining.keys()), test_config['num_words'])
     
-    chosen_sentences = choose_sentences(sentences, chars, num_sentences)
+    chosen_sentences = choose_sentences(sentences, chars, test_config['num_sentences'])
 
-    half_num = int(num_sentences / 2)
+    half_num = int(test_config['num_sentences'] / 2)
     
     return {
         'words_chinese':words_chinese,
         'sentences_chinese':[sentence[0] for sentence in chosen_sentences[0:half_num]],
         'words_english':[val[1] for val in words_english],
         'sentences_english':[sentence[1] for sentence in chosen_sentences[half_num:]],
-        'title':'HSK {} Test'.format(str(HSK))
+        'title':'HSK {} Test'.format(str(test_config['HSK']))
     }
 
 def main():
-    chars, data_words = load_dataset(HSK)
-    sentences = load_sentences(HSK)
-    words = load_words(HSK)
+    chars, data_words = load_dataset(test_config['HSK'])
+    sentences = load_sentences(test_config['HSK'])
+    words = load_words(test_config['HSK'])
 
     for word, definition in data_words.items():
         if word not in words["easy"]:

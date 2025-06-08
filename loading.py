@@ -1,5 +1,10 @@
 import os
 
+# TODO: This file contains both loading as well as modification to suit latex formatting (textquotesingle...).
+# Some of the formatting is OK (ie. strip), but some of the latex only stuff should be extracted so that this
+# loading logic can be reused elsewhere.
+
+# TODO: This only returns a subset of the info in the dataset. Should return more so that this can be reused elsewhere
 def load_dataset(hsk):
     chars = set()
     words = {}

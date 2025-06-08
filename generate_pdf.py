@@ -27,4 +27,3 @@ def generate_tex(test_def, filename):
     
 def generate_pdf_from_tex(tex_filename):
     subprocess.run(['xelatex', tex_filename])
-

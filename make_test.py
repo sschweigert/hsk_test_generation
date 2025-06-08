@@ -63,8 +63,7 @@ def chars_in_sentence(sentence, chars):
             total += 1
             if char not in chars
                 count += 1
-    return count
-        
+    return count / total
 
 def choose_sentences(sentences, chars, count):
     chars = chars.copy()

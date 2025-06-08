@@ -55,13 +55,16 @@ def load_words():
             words[child][word_chinese] = word_english
     return words
 
+non_chars = set([' ', '。', '，', '？', '！', '.', ',', '?', '!', '\"', '\'', '“', '”'])
+non_chars.update([str(val) for val in range(10)])
+
 def chars_in_sentence(sentence, chars):
     count = 0
     total = 0
     for char in sentence[0]:
-        if char != ' '
+        if char not in non_chars:
             total += 1
-            if char not in chars
+            if char in chars:
                 count += 1
     return count / total
 
@@ -70,18 +73,19 @@ def choose_sentences(sentences, chars, count):
     sentences = sentences.copy()
     to_return = []
     while len(to_return) < count:
-        weights = [chars_in_sentence(sentence) for sentence in sentences]
+        weights = [chars_in_sentence(sentence, chars) for sentence in sentences]
         any_nonzero = any([weight > 0 for weight in weights])
         if not any_nonzero:
             break
 
-        result_index = random.choices(range(len(sentences)), weights=weights, k=1)
+        result_index = random.choices(range(len(sentences)), weights=weights, k=1)[0]
         val = sentences[result_index]
         to_return.append(val)
         sentences.pop(result_index)
 
-        for char in val:
-            chars.remove(char)
+        for char in val[0]:
+            if char in chars:
+                chars.remove(char)
 
     k_remaining = count - len(to_return)
     if k_remaining > 0:
@@ -114,8 +118,9 @@ def main():
     words_chinese = random.sample(list(remaining.keys()), num_words)
     
     chosen_sentences = choose_sentences(sentences, chars, num_sentences)
-    half_num = int(num_sentences / 2)
 
+    half_num = int(num_sentences / 2)
+    
     test_def = {
         'words_chinese':words_chinese,
         'sentences_chinese':[sentence[0] for sentence in chosen_sentences[0:half_num]],
@@ -126,7 +131,6 @@ def main():
     filename = 'output.tex'
     generate_test_tex(test_def, filename)
     generate_pdf(filename)
-
 
 def generate_test_tex(test_def, filename):
     env = Environment(loader=FileSystemLoader('templates/'), trim_blocks=True, lstrip_blocks=True)

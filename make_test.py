@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
 import random
-import subprocess
 import copy
 
-from jinja2 import Environment, FileSystemLoader
 from loading import load_dataset, load_sentences, load_words
+from generate_pdf import generate_pdf
 
 HSK = 1
 random.seed(0)
@@ -50,15 +49,7 @@ def choose_sentences(sentences, chars, count):
     random.shuffle(to_return)
     return to_return
 
-def main():
-    chars, data_words = load_dataset(HSK)
-    sentences = load_sentences(HSK)
-    words = load_words(HSK)
-
-    for word, definition in data_words.items():
-        if word not in words["easy"]:
-            words["easy"][word] = definition
-
+def generate_test_def(chars, words, sentences):
     num_words = 50
     num_sentences = 20
 
@@ -76,33 +67,27 @@ def main():
 
     half_num = int(num_sentences / 2)
     
-    test_def = {
+    return {
         'words_chinese':words_chinese,
         'sentences_chinese':[sentence[0] for sentence in chosen_sentences[0:half_num]],
         'words_english':[val[1] for val in words_english],
         'sentences_english':[sentence[1] for sentence in chosen_sentences[half_num:]],
         'title':'HSK {} Test'.format(str(HSK))
     }
-    filename = 'output.tex'
-    generate_test_tex(test_def, filename)
-    generate_pdf(filename)
 
-def generate_test_tex(test_def, filename):
-    env = Environment(loader=FileSystemLoader('templates/'), trim_blocks=True, lstrip_blocks=True)
-    template = env.get_template('chinese_test.jinja')
-    content = template.render(
-        words_chinese=test_def['words_chinese'],
-        sentences_chinese=test_def['sentences_chinese'],
-        words_english=test_def['words_english'],
-        sentences_english=test_def['sentences_english'],
-        title=test_def['title']
-    )
+def main():
+    chars, data_words = load_dataset(HSK)
+    sentences = load_sentences(HSK)
+    words = load_words(HSK)
 
-    with open(filename, mode='w') as message:
-        message.write(content)
-    
-def generate_pdf(tex_filename):
-    subprocess.run(['xelatex', tex_filename])
+    for word, definition in data_words.items():
+        if word not in words["easy"]:
+            words["easy"][word] = definition
+
+    test_def = generate_test_def(chars, words, sentences)
+
+    filename = 'output'
+    generate_pdf(test_def, filename)
 
 if __name__ == '__main__':
     main()

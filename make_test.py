@@ -1,59 +1,14 @@
 #!/usr/bin/python3
 
-import os
 import random
 import subprocess
 import copy
 
 from jinja2 import Environment, FileSystemLoader
+from loading import load_dataset, load_sentences, load_words
 
 HSK = 1
 random.seed(0)
-
-def load_dataset():
-    chars = set()
-    words = {}
-    filename = os.path.join('.', 'data', 'hsk' + str(HSK) + '.txt')
-    with open(filename, 'r') as file:
-        for line in file:
-            # Note sometimes there are misc \ufeff.
-            # This is due to bad CSV encoding
-            split = line.replace('\ufeff', '').split('\t')
-            word = split[0].strip()
-            definition = split[4].strip().replace(';', ',').replace('\'','{\\textquotesingle}').capitalize()
-            for char in word:
-                chars.add(char)
-                words[word] = definition
-    return (chars, words)
-
-def load_sentences():
-    sentences = []
-    filename = os.path.join('.', 'sentences', 'hsk' + str(HSK) + '.txt')
-    with open(filename, 'r') as file:
-        for line in file:
-            split_line = line.split(';')
-            if len(split_line) == 2:
-                sentence = (split_line[0].strip(), split_line[1].replace('\'','{\\textquotesingle}').strip())
-                sentences.append(sentence)
-    return sentences
-
-def load_words():
-    words = {
-        "easy": {},
-        "hard": {}
-    }
-    filename = os.path.join('.', 'words', 'hsk' + str(HSK) + '.txt')
-    with open(filename, 'r') as file:
-        for line in file:
-            child = 'easy' if ('*' in line) else 'hard'
-            modified = line.replace('*', '').strip()
-            split_line = modified.split(';')
-            if len(split_line) != 2:
-                continue
-            word_chinese = split_line[0].strip()
-            word_english = split_line[1].replace('\'','{\\textquotesingle}').strip()
-            words[child][word_chinese] = word_english
-    return words
 
 non_chars = set([' ', '。', '，', '？', '！', '.', ',', '?', '!', '\"', '\'', '“', '”'])
 non_chars.update([str(val) for val in range(10)])
@@ -96,9 +51,9 @@ def choose_sentences(sentences, chars, count):
     return to_return
 
 def main():
-    chars, data_words = load_dataset()
-    sentences = load_sentences()
-    words = load_words()
+    chars, data_words = load_dataset(HSK)
+    sentences = load_sentences(HSK)
+    words = load_words(HSK)
 
     for word, definition in data_words.items():
         if word not in words["easy"]:

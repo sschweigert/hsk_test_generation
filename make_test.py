@@ -55,8 +55,42 @@ def load_words():
             words[child][word_chinese] = word_english
     return words
 
+def chars_in_sentence(sentence, chars):
+    count = 0
+    total = 0
+    for char in sentence[0]:
+        if char != ' '
+            total += 1
+            if char not in chars
+                count += 1
+    return count
+        
+
 def choose_sentences(sentences, chars, count):
-    return random.sample(sentences, count)
+    chars = chars.copy()
+    sentences = sentences.copy()
+    to_return = []
+    while len(to_return) < count:
+        weights = [chars_in_sentence(sentence) for sentence in sentences]
+        any_nonzero = any([weight > 0 for weight in weights])
+        if not any_nonzero:
+            break
+
+        result_index = random.choices(range(len(sentences)), weights=weights, k=1)
+        val = sentences[result_index]
+        to_return.append(val)
+        sentences.pop(result_index)
+
+        for char in val:
+            chars.remove(char)
+
+    k_remaining = count - len(to_return)
+    if k_remaining > 0:
+        additional = random.choices(sentences, k=k_remaining)
+        to_return.extend(additional)
+    
+    random.shuffle(to_return)
+    return to_return
 
 def main():
     chars, data_words = load_dataset()
@@ -70,9 +104,10 @@ def main():
     num_words = 50
     num_sentences = 20
 
-    # Easy only
+    # Easy only for english->chinese
     words_english = random.sample(list(words["easy"].items()), num_words)
 
+    # Chinese->english contains all the remaining words (minus those in words_english)
     remaining = copy.deepcopy(words['hard']) | copy.deepcopy(words['easy'])
     for key, val in words_english:
         del remaining[key]

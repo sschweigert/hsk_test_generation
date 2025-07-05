@@ -12,10 +12,17 @@ test_config = {
     'num_sentences': 20
 }
 
+
+def fix_quotes(words):
+    for key, val in words.items():
+        words[key] = val.replace('\'','{\\textquotesingle}') 
+
 def main():
-    chars, data_words = load_dataset(test_config['HSK'])
+    chars, data_words, _ = load_dataset(test_config['HSK'])
     sentences = load_sentences(test_config['HSK'])
     words = load_words(test_config['HSK'])
+
+    fix_quotes(data_words)
 
     for word, definition in data_words.items():
         if word not in words["easy"]:

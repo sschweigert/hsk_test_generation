@@ -3,11 +3,12 @@ import os
 # TODO: This file contains both loading as well as modification to suit latex formatting (textquotesingle...).
 # Some of the formatting is OK (ie. strip), but some of the latex only stuff should be extracted so that this
 # loading logic can be reused elsewhere.
+# NOTE: This work was completed for load_dataset (see fix_quotes in make_test.py. Still needs to be done for other fcns)
 
-# TODO: This only returns a subset of the info in the dataset. Should return more so that this can be reused elsewhere
 def load_dataset(hsk):
     chars = set()
-    words = {}
+    defs = {}
+    pinyin = {}
     filename = os.path.join('.', 'data', 'hsk' + str(hsk) + '.txt')
     with open(filename, 'r') as file:
         for line in file:
@@ -15,11 +16,14 @@ def load_dataset(hsk):
             # This is due to bad CSV encoding
             split = line.replace('\ufeff', '').split('\t')
             word = split[0].strip()
-            definition = split[4].strip().replace(';', ',').replace('\'','{\\textquotesingle}').capitalize()
+            pinyin_1 = split[2].strip()
+            pinyin_2 = split[3].strip()
+            definition = split[4].strip().replace(';', ',').capitalize()
             for char in word:
                 chars.add(char)
-                words[word] = definition
-    return (chars, words)
+            defs[word] = definition
+            pinyin[word] = (pinyin_1, pinyin_2)
+    return (chars, defs, pinyin)
 
 def load_sentences(hsk):
     sentences = []

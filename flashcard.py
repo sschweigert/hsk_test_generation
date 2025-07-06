@@ -3,9 +3,13 @@
 from loading import load_dataset, load_sentences, load_words
 import random
 import os
+from datetime import date
+
+day_as_number = (date.today() - date(1970, 1, 1)).days
+print(day_as_number)
 
 HSK = 1
-seed = 1
+seed = day_as_number
 
 def main():
     chars, data_words, pinyin = load_dataset(HSK)

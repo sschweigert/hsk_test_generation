@@ -22,7 +22,6 @@
 人气;adj. Popularity
 老人;n. old man or woman *
 好心;Kindness, good intentions
-关心;v. to care about
 人心;The will of the people
 月月;Every month
 中心;n. Center
@@ -176,8 +175,6 @@
 电影院;Cinema *
 电影明星;Movie star
 天气;Weather *
-小气;Petty, narrow-minded
-生气;Angry *
 怎么样;How is it, how about, what about *
 看样子;It seems, it looks as if
 老样子;Same old thing, the same as before

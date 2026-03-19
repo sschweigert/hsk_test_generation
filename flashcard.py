@@ -43,10 +43,10 @@ def get_seed():
 
 def load_cases(hsk, mode, difficulty):
     if mode == 'words':
-        words = load_words(HSK)    
+        words = load_words(hsk)    
         return [(key, val) for key, val in words[difficulty].items()]
     elif mode == 'chars':
-        chars, data_words, pinyin = load_dataset(HSK)
+        chars, data_words, pinyin = load_dataset(hsk)
         
         return [(word, val[1], val[0]) for word, val in pinyin.items()]
     else:

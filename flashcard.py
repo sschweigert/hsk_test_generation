@@ -15,7 +15,7 @@ def parse_args():
     parser.add_argument(
         "--hsk",
         type=int,
-        required=True,
+        default=1,
         choices=range(1, 7),
         metavar="{1-6}",
         help="HSK level (1–6)",
@@ -23,7 +23,7 @@ def parse_args():
     parser.add_argument(
         "--mode",
         type=str,
-        default="chars",
+        default="words",
         help="Mode of operation (e.g. 'chars', 'pinyin', 'meaning')",
     )
     parser.add_argument(
@@ -44,7 +44,8 @@ def get_seed():
 def load_cases(hsk, mode, difficulty):
     if mode == 'words':
         words = load_words(hsk)    
-        return [(key, val) for key, val in words[difficulty].items()]
+        print(words[difficulty].items())
+        return [(key, f"({val['pinyin']}) {val['english']}") for key, val in words[difficulty].items()]
     elif mode == 'chars':
         chars, data_words, pinyin = load_dataset(hsk)
         

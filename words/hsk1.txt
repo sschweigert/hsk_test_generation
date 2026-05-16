@@ -1,263 +1,263 @@
-对不起;Sorry *
-你好;Hello *
-没关系;Never mind/it doesn't matter *
-关系;n. Relationship/connection *
-关心;v. Concerned about, care for *
-谢谢; Thank you *
-不客气;You're welcome *
-再见;Goodbye *
-小气;adj. Petty, narrow-minded
-小心;v. To be careful, to take care *
-一口气;In one breath, without a break
-叫好;v. To applaud, to cheer
-名叫;v. To be called, to be named
-没什么;It doesn't matter, never mind
-名字; Name *
-小名;Pet name for a child, childhood name
-名师;Famous master, great teacher
-老气;adj. Old fashioned
-再生;To be reborn, recycing
-生气;To be angry, mad *
-人生;n. Life (one's time on earth) *
-人气;adj. Popularity
-老人;n. old man or woman *
-好心;Kindness, good intentions
-人心;The will of the people
-月月;Every month
-中心;n. Center
-心中;In one's thoughts, at heart, in mind
-中学生;Middle school student *
-学生;Student *
-汉语;Chinese language *
-好汉;Brave man, hero
-老汉;Old man
-汉字;Chinese character  *
-口语;Spoken language *
-语气;Tone, manner of speaking
-同学;Classmate, schoolmate *
-好友;Close friend
-友好;adj. Friendly
-今生;This life *
-中年;Middle age *
-多心;v. Be over sensitive
-大学;University, college *
-大小;Size, dimension
-大人;Adult *
-岁月;n. Years, time
-同岁;Same age
-老了;Getting old *
-了不起;Amazing, terrific, extraordinary
-大家;Everyone *
-老人家;Polite term for old woman or man
-有名;Famous, well known *
-口水;Saliva *
-生水;Unboiled water
-山水;n. Water flowing from a mountain
-再会;Until we meet again, goodbye
-做人;To conduct oneself, to behave with integrity
-上菜;To serve dishes
-小吃;Snack, refreshment *
-口吃;v. To stammer, to stutter
-小说;n. novel
-做东;v. act as a host to somebody, treat somebody to something
-东西;n. Thing, stuff *
-天生;Nature, natural
-昨天;Yesterday *
-明天;Tomorrow *
-说明;To explain, show, an explanation
-明月;Bright moon
-口号;n. slogan
-大号;adj. large size
-中号;adj. medium size
-几月几号;What date (is it) *
-去年;Last year *
-老去;To become old
-学校;School *
-学友;Schoolmate *
-看见;v. To catch sight of *
-看上去;It would appear, it seems
-看不起;Look down upon
-人五人六;Make a show of being decent and proper
-一五一十;To narrate in full detail
-请问;Excuse me, may I ask... *
-请客;v. invite guests, treat somebody to a meal, etc. *
-问好;v. to give regards to, to say hello to
-问号;n. question mark
-学问;n. Learning, knowledge
-星期;Week *
-明星;Star, celebrity
-星期几;What day (of the week)
-学期;n. semester
-上星期;Last week
-星期天;Sunday *
-想起;Think of, recall
-茶杯;Teacup *
-茶几;A small side table, coffee table
-一块儿;Together
-米饭;(cooked) rice *
-玉米;Corn *
-饭店;n. Restaurant, hotel *
-下午;Afternoon *
-下星期;Next week *
-吃不下;Not feel like eating, unable to eat any more
-上午;Morning *
-中午;Noon, midday *
-商店;Store, shop *
-商人;Merchant, businessman *
-商会;Chamber of commerce
-买不起;Can't afford anything
-多多少少;To some extent, more or less
-老爸;Dad, father
-老妈;Mother
-工作;Work, job *
-工人;Worker *
-人工;Manual work, manpower *
-工钱;Salary, wage *
-写作;Writing, to write
-名作;Masterpiece, famous work
-做作;Unnatural, artificial *
-医学;Study of medicine *
-中医;Traditional chinese medicine, a doctor trained thereof *
-西医;A doctor trained in western medicine, western medicine *
-医生;Doctor *
-医院;Hospital *
-医学院;Medical school *
-老人院;Old people's home
-中医院;Hospital of chinese medicine *
+对不起;duì bù qǐ;Sorry *
+你好;nǐ hǎo;Hello *
+没关系;méi guān xì;Never mind/it doesn't matter *
+关系;guān xì;n. Relationship/connection *
+关心;guān xīn;v. Concerned about, care for *
+谢谢;xiè xiè;Thank you *
+不客气;bú kè qì;You're welcome *
+再见;zài jiàn;Goodbye *
+小气;xiǎo qì;adj. Petty, narrow-minded
+小心;xiǎo xīn;v. To be careful, to take care *
+一口气;yì kǒu qì;In one breath, without a break
+叫好;jiào hǎo;v. To applaud, to cheer
+名叫;míng jiào;v. To be called, to be named
+没什么;méi shén me;It doesn't matter, never mind
+名字;míng zì;Name *
+小名;xiǎo míng;Pet name for a child, childhood name
+名师;míng shī;Famous master, great teacher
+老气;lǎo qì;adj. Old fashioned
+再生;zài shēng;To be reborn, recycing
+生气;shēng qì;To be angry, mad *
+人生;rén shēng;n. Life (one's time on earth) *
+人气;rén qì;adj. Popularity
+老人;lǎo rén;n. old man or woman *
+好心;hǎo xīn;Kindness, good intentions
+人心;rén xīn;The will of the people
+月月;yuè yuè;Every month
+中心;zhōng xīn;n. Center
+心中;xīn zhōng;In one's thoughts, at heart, in mind
+中学生;zhōng xué shēng;Middle school student *
+学生;xué shēng;Student *
+汉语;hàn yǔ;Chinese language *
+好汉;hǎo hàn;Brave man, hero
+老汉;lǎo hàn;Old man
+汉字;hàn zì;Chinese character  *
+口语;kǒu yǔ;Spoken language *
+语气;yǔ qì;Tone, manner of speaking
+同学;tóng xué;Classmate, schoolmate *
+好友;hǎo yǒu;Close friend
+友好;yǒu hǎo;adj. Friendly
+今生;jīn shēng;This life *
+中年;zhōng nián;Middle age *
+多心;duō xīn;v. Be over sensitive
+大学;dà xué;University, college *
+大小;dà xiǎo;Size, dimension
+大人;dà rén;Adult *
+岁月;suì yuè;n. Years, time
+同岁;tóng suì;Same age
+老了;lǎo le;Getting old *
+了不起;liǎo bù qǐ;Amazing, terrific, extraordinary
+大家;dà jiā;Everyone *
+老人家;lǎo rén jiā;Polite term for old woman or man
+有名;yǒu míng;Famous, well known *
+口水;kǒu shuǐ;Saliva *
+生水;shēng shuǐ;Unboiled water
+山水;shān shuǐ;n. Water flowing from a mountain
+再会;zài huì;Until we meet again, goodbye
+做人;zuò rén;To conduct oneself, to behave with integrity
+上菜;shàng cài;To serve dishes
+小吃;xiǎo chī;Snack, refreshment *
+口吃;kǒu chī;v. To stammer, to stutter
+小说;xiǎo shuō;n. novel
+做东;zuò dōng;v. act as a host to somebody, treat somebody to something
+东西;dōng xī;n. Thing, stuff *
+天生;tiān shēng;Nature, natural
+昨天;zuó tiān;Yesterday *
+明天;míng tiān;Tomorrow *
+说明;shuō míng;To explain, show, an explanation
+明月;míng yuè;Bright moon
+口号;kǒu hào;n. slogan
+大号;dà hào;adj. large size
+中号;zhōng hào;adj. medium size
+几月几号;jǐ yuè jǐ hào;What date (is it) *
+去年;qù nián;Last year *
+老去;lǎo qù;To become old
+学校;xué xiào;School *
+学友;xué yǒu;Schoolmate *
+看见;kàn jiàn;v. To catch sight of *
+看上去;kàn shàng qù;It would appear, it seems
+看不起;kàn bù qǐ;Look down upon
+人五人六;rén wǔ rén liù;Make a show of being decent and proper
+一五一十;yì wǔ yì shí;To narrate in full detail
+请问;qǐng wèn;Excuse me, may I ask... *
+请客;qǐng kè;v. invite guests, treat somebody to a meal, etc. *
+问好;wèn hǎo;v. to give regards to, to say hello to
+问号;wèn hào;n. question mark
+学问;xué wèn;n. Learning, knowledge
+星期;xīng qī;Week *
+明星;míng xīng;Star, celebrity
+星期几;xīng qī jǐ;What day (of the week)
+学期;xué qī;n. semester
+上星期;shàng xīng qī;Last week
+星期天;xīng qī tiān;Sunday *
+想起;xiǎng qǐ;Think of, recall
+茶杯;chá bēi;Teacup *
+茶几;chá jī;A small side table, coffee table
+一块儿;yī kuài ér;Together
+米饭;mǐ fàn;(cooked) rice *
+玉米;yù mǐ;Corn *
+饭店;fàn diàn;n. Restaurant, hotel *
+下午;xià wǔ;Afternoon *
+下星期;xià xīng qī;Next week *
+吃不下;chī bù xià;Not feel like eating, unable to eat any more
+上午;shàng wǔ;Morning *
+中午;zhōng wǔ;Noon, midday *
+商店;shāng diàn;Store, shop *
+商人;shāng rén;Merchant, businessman *
+商会;shāng huì;Chamber of commerce
+买不起;mǎi bù qǐ;Can't afford anything
+多多少少;duō duō shǎo shǎo;To some extent, more or less
+老爸;lǎo bà;Dad, father
+老妈;lǎo mā;Mother
+工作;gōng zuò;Work, job *
+工人;gōng rén;Worker *
+人工;rén gōng;Manual work, manpower *
+工钱;gōng qián;Salary, wage *
+写作;xiě zuò;Writing, to write
+名作;míng zuò;Masterpiece, famous work
+做作;zuò zuò;Unnatural, artificial *
+医学;yī xué;Study of medicine *
+中医;zhōng yī;Traditional chinese medicine, a doctor trained thereof *
+西医;xī yī;A doctor trained in western medicine, western medicine *
+医生;yī shēng;Doctor *
+医院;yī yuàn;Hospital *
+医学院;yī xué yuàn;Medical school *
+老人院;lǎo rén yuàn;Old people's home
+中医院;zhōng yī yuàn;Hospital of chinese medicine *
 下面；Below, under, next *
-见面;To see each other
-对面;Across (the street), directly in front
-熊猫;Panda
-能人;Capable person *
-坐起来;Sit up
-本能;Instinct
-本钱;Seed money, capital
-前年;The year before last *
-女友;Girlfriend
-几天前;A few days ago
-后面;Back, behind
-后天;The day after tomorrow *
-今后;From now on, in the future, the future
-电脑;Computer *
-家电;Household electric appliance
-电工;Electrician *
-电子书;E-book
-人脑;Human brain *
-和气;Kindly, polite, friendship, harmony
-和好;To reconcile, become reconciled, make up
-不和;Be not friendly with each other, not get along, disharmony
-现在;Now *
-现年;(A person's) current age
-现有;Currently available
-先做;Freshly made
-起点;Origin, starting pot
-点菜;Order dishes *
-几点了;What's the time? *
-有点小;A little too small *
-十分;Very, fully, extremely
-分校;Branch of a school
-学分;Course credit
-不分上下;(in a race or competition) neck and neck
-小时;Hour *
-同时;At the same time *
-这时;At this time, at this moment *
-小时候;In one's childhood *
-有时候;Sometimes *
-这时候;At this time, at this moment *
-回家;To return home *
-回国;Go back to one's country *
-回请;To return an invitation
-有一回;There was a time...
-北面;Northern side
-北京时候;Chinese standard time *
-住院;To be hospitalized, to be in the hospital
-住口;Shut one's mouth, stop talking
-电影院;Cinema *
-电影明星;Movie star
-天气;Weather *
-怎么样;How is it, how about, what about *
-看样子;It seems, it looks as if
-老样子;Same old thing, the same as before
-不怎么样;Normal, nothing great, so-so
-下雨;To rain *
-太太;Madam, lady, wife
-热心;Warm-hearted
-冷气;Air conditioning
-生冷;Raw and cold (food)
-小姐;Miss, young lady *
-爱好;Hobby *
-身体;Body, health *
-本身;Self, itself
-热身;To warm up (sports), to prepare
-身心;Body and mind, mental and physical
-人体;Human body *
-个体;Individual *
-回来;Come back, to return *
-后来;Later, afterwards *
-看起来;Appears to be, looks as if *
-想不起来;Unable to call to mind, cannot remember
-水果;Fruit *
-后国;Consequences
-开心果;Pistachio nuts, amusing person *
-学习;To learn, to study *
-见习;To learn on the job
-日月;The sun and moon *
-生日;Birthday *
-工作日;Weekday, workday *
-不见天日;All black no daylight, a world without justice
-目的;Aim, purpose, end, objective
-目前;Right now, present, now, recently
-心目中;In somebodies eye, on somebodies mind
-本来面目;True colors, true features (of a person)
-喜气;Cheerful atmosphere
-心里话;To express one's true feelings
-好说话;Be easy-going
-电视;TV *
-视觉;Visual sense
-先生;Mr *
-好好先生;Yes man (who agrees with everything)
-开心;Happy *
-开水;Boiled water *
-开饭;Serve a meal *
-先不开;Cannot figure out, be unable to take a lighter view, take things too hard
-开车;Drive a car *
-坐车;Take the car, bus, train, etc. *
-打车;Take a taxi *
-车本;Driver's license
-来回;To make a round trip
-苹果;Apple *
-衣服;Clothes *
-大衣;Topcoat, overcoar *
-雨衣;Raincoat *
-睡衣;Pajamas
-漂亮;Pretty, beautiful *
-月亮;The moon *
-明亮;Bright, well lit, shining, clear
-天亮了;The sun has risen, it's morning time
-分钟;Minute *
-时钟;Clock
-分分钟;Every minute
-打听;Ask around
-好听;Pleasant to hear *
-飞机;Airplane *
-起飞;Take off *
-机会;Opportunity, chance
-出租车;Taxi *
-出身;Family background
-出国;To go abroad
-出现;To appear, to show up
-租车;Rent a car *
-月租;Monthly rent
-租不起;Cannot afford to rent
-租房;Rent a house or apartment
-认识;Recognize, be acquianted, know, understanding, knowledge *
-认同;To identify oneself with
-认字;Knowing how to read
-认不出来;Cannot recognize
-见识;Knowledge and experience
-学识;Scholarly knowledge
-一字不识;Totally illiterate
-高兴;Happy, glad *
-身高;A person's height
-高大上;High-end, elegant, classy
-高高在上;Set up on high, not in touch with reality
+见面;jiàn miàn;To see each other
+对面;duì miàn;Across (the street), directly in front
+熊猫;xióng māo;Panda
+能人;néng rén;Capable person *
+坐起来;zuò qǐ lái;Sit up
+本能;běn néng;Instinct
+本钱;běn qián;Seed money, capital
+前年;qián nián;The year before last *
+女友;nǚ yǒu;Girlfriend
+几天前;jǐ tiān qián;A few days ago
+后面;hòu miàn;Back, behind
+后天;hòu tiān;The day after tomorrow *
+今后;jīn hòu;From now on, in the future, the future
+电脑;diàn nǎo;Computer *
+家电;jiā diàn;Household electric appliance
+电工;diàn gōng;Electrician *
+电子书;diàn zi shū;E-book
+人脑;rén nǎo;Human brain *
+和气;hé qì;Kindly, polite, friendship, harmony
+和好;hé hǎo;To reconcile, become reconciled, make up
+不和;bù hé;Be not friendly with each other, not get along, disharmony
+现在;xiàn zài;Now *
+现年;xiàn nián;(A person's) current age
+现有;xiàn yǒu;Currently available
+先做;xiān zuò;Freshly made
+起点;qǐ diǎn;Origin, starting pot
+点菜;diǎn cài;Order dishes *
+几点了;jǐ diǎn le;What's the time? *
+有点小;yǒu diǎn xiǎo;A little too small *
+十分;shí fēn;Very, fully, extremely
+分校;fēn xiào;Branch of a school
+学分;xué fēn;Course credit
+不分上下;bù fēn shàng xià;(in a race or competition) neck and neck
+小时;xiǎo shí;Hour *
+同时;tóng shí;At the same time *
+这时;zhè shí;At this time, at this moment *
+小时候;xiǎo shí hòu;In one's childhood *
+有时候;yǒu shí hòu;Sometimes *
+这时候;zhè shí hòu;At this time, at this moment *
+回家;huí jiā;To return home *
+回国;huí guó;Go back to one's country *
+回请;huí qǐng;To return an invitation
+有一回;yǒu yī huí;There was a time...
+北面;běi miàn;Northern side
+北京时候;běi jīng shí hòu;Chinese standard time *
+住院;zhù yuàn;To be hospitalized, to be in the hospital
+住口;zhù kǒu;Shut one's mouth, stop talking
+电影院;diàn yǐng yuàn;Cinema *
+电影明星;diàn yǐng míng xīng;Movie star
+天气;tiān qì;Weather *
+怎么样;zěn me yàng;How is it, how about, what about *
+看样子;kàn yàng zi;It seems, it looks as if
+老样子;lǎo yàng zi;Same old thing, the same as before
+不怎么样;bù zěn me yàng;Normal, nothing great, so-so
+下雨;xià yǔ;To rain *
+太太;tài tài;Madam, lady, wife
+热心;rè xīn;Warm-hearted
+冷气;lěng qì;Air conditioning
+生冷;shēng lěng;Raw and cold (food)
+小姐;xiǎo jiě;Miss, young lady *
+爱好;ài hào;Hobby *
+身体;shēn tǐ;Body, health *
+本身;běn shēn;Self, itself
+热身;rè shēn;To warm up (sports), to prepare
+身心;shēn xīn;Body and mind, mental and physical
+人体;rén tǐ;Human body *
+个体;gè tǐ;Individual *
+回来;huí lái;Come back, to return *
+后来;hòu lái;Later, afterwards *
+看起来;kàn qǐ lái;Appears to be, looks as if *
+想不起来;xiǎng bù qǐ lái;Unable to call to mind, cannot remember
+水果;shuǐ guǒ;Fruit *
+后国;hòu guó;Consequences
+开心果;kāi xīn guǒ;Pistachio nuts, amusing person *
+学习;xué xí;To learn, to study *
+见习;jiàn xí;To learn on the job
+日月;rì yuè;The sun and moon *
+生日;shēng rì;Birthday *
+工作日;gōng zuò rì;Weekday, workday *
+不见天日;bù jiàn tiān rì;All black no daylight, a world without justice
+目的;mù dì;Aim, purpose, end, objective
+目前;mù qián;Right now, present, now, recently
+心目中;xīn mù zhōng;In somebodies eye, on somebodies mind
+本来面目;běn lái miàn mù;True colors, true features (of a person)
+喜气;xǐ qì;Cheerful atmosphere
+心里话;xīn lǐ huà;To express one's true feelings
+好说话;hǎo shuō huà;Be easy-going
+电视;diàn shì;TV *
+视觉;shì jué;Visual sense
+先生;xiān shēng;Mr *
+好好先生;hǎo hǎo xiān shēng;Yes man (who agrees with everything)
+开心;kāi xīn;Happy *
+开水;kāi shuǐ;Boiled water *
+开饭;kāi fàn;Serve a meal *
+先不开;xiān bù kāi;Cannot figure out, be unable to take a lighter view, take things too hard
+开车;kāi chē;Drive a car *
+坐车;zuò chē;Take the car, bus, train, etc. *
+打车;dǎ chē;Take a taxi *
+车本;chē běn;Driver's license
+来回;lái huí;To make a round trip
+苹果;píng guǒ;Apple *
+衣服;yī fú;Clothes *
+大衣;dà yī;Topcoat, overcoar *
+雨衣;yǔ yī;Raincoat *
+睡衣;shuì yī;Pajamas
+漂亮;piào liàng;Pretty, beautiful *
+月亮;yuè liàng;The moon *
+明亮;míng liàng;Bright, well lit, shining, clear
+天亮了;tiān liàng le;The sun has risen, it's morning time
+分钟;fēn zhōng;Minute *
+时钟;shí zhōng;Clock
+分分钟;fēn fēn zhōng;Every minute
+打听;dǎ tīng;Ask around
+好听;hǎo tīng;Pleasant to hear *
+飞机;fēi jī;Airplane *
+起飞;qǐ fēi;Take off *
+机会;jī huì;Opportunity, chance
+出租车;chū zū chē;Taxi *
+出身;chū shēn;Family background
+出国;chū guó;To go abroad
+出现;chū xiàn;To appear, to show up
+租车;zū chē;Rent a car *
+月租;yuè zū;Monthly rent
+租不起;zū bù qǐ;Cannot afford to rent
+租房;zū fáng;Rent a house or apartment
+认识;rèn shí;Recognize, be acquianted, know, understanding, knowledge *
+认同;rèn tóng;To identify oneself with
+认字;rèn zì;Knowing how to read
+认不出来;rèn bù chū lái;Cannot recognize
+见识;jiàn shí;Knowledge and experience
+学识;xué shí;Scholarly knowledge
+一字不识;yī zì bù shí;Totally illiterate
+高兴;gāo xìng;Happy, glad *
+身高;shēn gāo;A person's height
+高大上;gāo dà shàng;High-end, elegant, classy
+高高在上;gāo gāo zài shàng;Set up on high, not in touch with reality

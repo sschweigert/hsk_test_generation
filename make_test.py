@@ -22,6 +22,10 @@ def main():
     sentences = load_sentences(test_config['HSK'])
     words = load_words(test_config['HSK'])
 
+    # TODO: words now has pinyin as part of the object
+    # however, data_words does not have pinyin. Therefore these are now incompatible.
+    # Likewise, the generate_test is also broken due to this
+
     fix_quotes(data_words)
 
     for word, definition in data_words.items():

@@ -47,9 +47,10 @@ def load_words(hsk):
             child = 'easy' if ('*' in line) else 'hard'
             modified = line.replace('*', '').strip()
             split_line = modified.split(';')
-            if len(split_line) != 2:
+            if len(split_line) != 3:
                 continue
             word_chinese = split_line[0].strip()
-            word_english = split_line[1].replace('\'','{\\textquotesingle}').strip()
-            words[child][word_chinese] = word_english
+            word_pinyin = split_line[1].strip()
+            word_english = split_line[2].replace('\'','{\\textquotesingle}').strip()
+            words[child][word_chinese] = {"english": word_english, "pinyin": word_pinyin}
     return words
